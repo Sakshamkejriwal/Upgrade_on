@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutual Funds - UPGrade</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <img src="logo.png" alt="UPGrade Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mutual-funds.html">Mutual Funds</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Mutual Funds</h1>
+      <p>Explore our curated collection of mutual funds</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container pt-2 p-3">
+    <!-- Filter Section -->
+    <div class="funds-filter">
+      <h3 class="mb-3\">Filter Funds</h3>
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="fund-category">Category</label>
+          <select id="fund-category">
+            <option>All Categories</option>
+            <option>Equity</option>
+            <option>Debt</option>
+            <option>Balanced</option>
+            <option>Liquid</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="fund-type">Fund Type</label>
+          <select id="fund-type">
+            <option>All Types</option>
+            <option>Direct Plan</option>
+            <option>Regular Plan</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="min-rating">Minimum Rating</label>
+          <select id="min-rating">
+            <option>All Ratings</option>
+            <option>⭐⭐⭐⭐⭐ (5 Star)</option>
+            <option>⭐⭐⭐⭐ (4 Star)</option>
+            <option>⭐⭐⭐ (3 Star)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="min-return">Min. Return (%)</label>
+          <input type="number" id="min-return" placeholder="e.g., 10" min="0" max="100">
+        </div>
+      </div>
+    </div>
+
+    <!-- Funds List -->
+    <div class="funds-list">
+      <!-- Fund Card 1 -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>HDFC Top 100 Fund</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Equity</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.43%</span>
+            <span><strong>Fund Size:</strong> ₹ 15,000 Cr</span>
+            <span><strong>Launch Date:</strong> Jan 1995</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+18.5%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+22.3%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+25.8%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+
+      <!-- Fund Card 2 -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>ICICI Prudential Equity</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Equity</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.45%</span>
+            <span><strong>Fund Size:</strong> ₹ 18,500 Cr</span>
+            <span><strong>Launch Date:</strong> Mar 1993</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+20.1%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+24.5%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+27.2%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+
+      <!-- Fund Card 3 -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>Axis Bluechip Fund</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Equity</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.38%</span>
+            <span><strong>Fund Size:</strong> ₹ 12,300 Cr</span>
+            <span><strong>Launch Date:</strong> Jun 2000</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+16.8%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+21.2%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+24.1%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+
+      <!-- Fund Card 4 - Debt -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>SBI Magnum Balanced Fund</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Balanced</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.62%</span>
+            <span><strong>Fund Size:</strong> ₹ 8,900 Cr</span>
+            <span><strong>Launch Date:</strong> Feb 1999</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+12.4%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+14.8%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+16.2%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+
+      <!-- Fund Card 5 - Liquid -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>HDFC Liquid Fund</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Liquid</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.20%</span>
+            <span><strong>Fund Size:</strong> ₹ 45,000 Cr</span>
+            <span><strong>Launch Date:</strong> Jul 1996</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+5.2%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+5.8%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+6.1%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+
+      <!-- Fund Card 6 -->
+      <div class="fund-card">
+        <div class="fund-info">
+          <h3>Mirae Asset Emerging Bluechip</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <span class="fund-category">Equity</span>
+            <span style="color: gold; font-weight: bold;">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="fund-details">
+            <span><strong>Expense Ratio:</strong> 0.52%</span>
+            <span><strong>Fund Size:</strong> ₹ 11,200 Cr</span>
+            <span><strong>Launch Date:</strong> Aug 2005</span>
+          </div>
+        </div>
+        <div class="fund-stats">
+          <div class="fund-stat">
+            <span class="stat-label">1 Year Return</span>
+            <span class="stat-value positive">+22.3%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">3 Year Return</span>
+            <span class="stat-value positive">+26.7%</span>
+          </div>
+          <div class="fund-stat">
+            <span class="stat-label">5 Year Return</span>
+            <span class="stat-value positive">+29.5%</span>
+          </div>
+          <button class="btn btn-primary btn-small">Invest Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 3rem;">
+      <button class="btn btn-secondary">← Previous</button>
+      <button class="btn btn-primary">1</button>
+      <button class="btn btn-secondary">2</button>
+      <button class="btn btn-secondary">3</button>
+      <button class="btn btn-secondary">Next →</button>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-wrapper">
+
+      <div class="footer-column about">
+        <h3>About UPGRADE</h3>
+        <p>UPGRADE is an educational platform to help you learn investing in stocks and mutual funds with ease and confidence.</p>
+        <p>&copy; 2025 UPGRADE. All rights reserved.</p>
+      </div>
+
+      <div class="footer-column links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="mutual-funds.html">Mutual Funds</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@upgrade.com</p>
+        <p>Phone: +91-123-456-7890</p>
+        <p>Address: 123 Finance Street, Delhi, India</p>
+      </div>
+
+      <div class="footer-column social">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#" aria-label="Facebook">Facebook</a> | 
+          <a href="#" aria-label="Twitter">Twitter</a> | 
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="disclaimer">
+        Investing involves risks. Past performance does not guarantee future results. Use this platform for educational purposes only. Consult a licensed financial advisor before investing.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
