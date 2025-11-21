@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocks - UPGrade</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <img src="logo.png" alt="UPGrade Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mutual-funds.html">Mutual Funds</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Stocks</h1>
+      <p>Invest in India's leading companies</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container pt-2 p-3">
+    <!-- Search & Filter Section -->
+    <div class="stocks-header">
+      <div class="search-box">
+        <input type="text" placeholder="Search stocks (e.g., TCS, Reliance, INFY)">
+        <button class="btn btn-primary">Search</button>
+      </div>
+
+      <div style="display: flex; gap: 1rem;">
+        <select class="filter-select">
+          <option>All Sectors</option>
+          <option>Technology</option>
+          <option>Finance</option>
+          <option>Energy</option>
+          <option>Healthcare</option>
+          <option>Retail</option>
+        </select>
+
+        <select class="filter-select">
+          <option>Sort By</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Gain: High to Low</option>
+          <option>Volume: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Stocks Table -->
+    <div class="stocks-table">
+      <div class="table-header">
+        <div>Company</div>
+        <div>Price</div>
+        <div>Change</div>
+        <div>% Change</div>
+        <div>Volume</div>
+        <div>Action</div>
+      </div>
+
+      <!-- Stock Row 1 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Reliance Industries (RIL)</strong>
+          <small>Energy Sector</small>
+        </div>
+        <div>₹ 3,260</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+85</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+2.68%</div>
+        <div>2.4M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 2 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>TCS (Tata Consultancy)</strong>
+          <small>Technology Sector</small>
+        </div>
+        <div>₹ 4,125</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+42</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+1.03%</div>
+        <div>1.8M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 3 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Infosys (INFY)</strong>
+          <small>Technology Sector</small>
+        </div>
+        <div>₹ 2,540</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-28</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-1.09%</div>
+        <div>3.1M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 4 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>HDFC Bank (HDFCBANK)</strong>
+          <small>Finance Sector</small>
+        </div>
+        <div>₹ 1,815</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+35</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+1.96%</div>
+        <div>2.9M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 5 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>ICICI Bank (ICICIBANK)</strong>
+          <small>Finance Sector</small>
+        </div>
+        <div>₹ 935</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+18</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+1.96%</div>
+        <div>4.2M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 6 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Wipro (WIPRO)</strong>
+          <small>Technology Sector</small>
+        </div>
+        <div>₹ 415</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-12</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-2.81%</div>
+        <div>5.6M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 7 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Maruti Suzuki (MARUTI)</strong>
+          <small>Automotive Sector</small>
+        </div>
+        <div>₹ 9,850</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+125</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+1.29%</div>
+        <div>1.2M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 8 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Bharati Airtel (AIRTELQ)</strong>
+          <small>Telecom Sector</small>
+        </div>
+        <div>₹ 935</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+22</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+2.41%</div>
+        <div>3.4M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 9 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Axis Bank (AXISBANK)</strong>
+          <small>Finance Sector</small>
+        </div>
+        <div>₹ 1,085</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-15</div>
+        <div style="color: var(--danger-color); font-weight: bold;">-1.36%</div>
+        <div>2.1M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+
+      <!-- Stock Row 10 -->
+      <div class="table-row">
+        <div class="stock-name">
+          <strong>Bajaj Finance (BAJAJFINSV)</strong>
+          <small>Finance Sector</small>
+        </div>
+        <div>₹ 6,850</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+95</div>
+        <div style="color: var(--secondary-color); font-weight: bold;">+1.41%</div>
+        <div>1.5M</div>
+        <div>
+          <button class="btn btn-primary btn-small">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Market Summary -->
+    <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+      <div style="background-color: var(--white-color); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+        <p style="color: var(--gray-color); margin-bottom: 0.5rem;">Market Status</p>
+        <h3 style="color: var(--secondary-color); font-size: 1.2rem;">🟢 Open</h3>
+        <small style="color: var(--gray-color);">Closes at 3:30 PM IST</small>
+      </div>
+
+      <div style="background-color: var(--white-color); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+        <p style="color: var(--gray-color); margin-bottom: 0.5rem;">Nifty 50</p>
+        <h3 style="font-size: 1.5rem; font-weight: bold;">23,485.50</h3>
+        <small style="color: var(--secondary-color); font-weight: bold;">+285.40 (+1.23%)</small>
+      </div>
+
+      <div style="background-color: var(--white-color); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+        <p style="color: var(--gray-color); margin-bottom: 0.5rem;">Sensex</p>
+        <h3 style="font-size: 1.5rem; font-weight: bold;">79,450.25</h3>
+        <small style="color: var(--secondary-color); font-weight: bold;">+520.15 (+0.66%)</small>
+      </div>
+
+      <div style="background-color: var(--white-color); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+        <p style="color: var(--gray-color); margin-bottom: 0.5rem;">Total Volume</p>
+        <h3 style="font-size: 1.2rem;">28.6M Shares</h3>
+        <small style="color: var(--gray-color);">Traded today</small>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-wrapper">
+
+      <div class="footer-column about">
+        <h3>About UPGRADE</h3>
+        <p>UPGRADE is an educational platform to help you learn investing in stocks and mutual funds with ease and confidence.</p>
+        <p>&copy; 2025 UPGRADE. All rights reserved.</p>
+      </div>
+
+      <div class="footer-column links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="mutual-funds.html">Mutual Funds</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@upgrade.com</p>
+        <p>Phone: +91-123-456-7890</p>
+        <p>Address: 123 Finance Street, Delhi, India</p>
+      </div>
+
+      <div class="footer-column social">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="#" aria-label="Facebook">Facebook</a> | 
+          <a href="#" aria-label="Twitter">Twitter</a> | 
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <p class="disclaimer">
+        Investing involves risks. Past performance does not guarantee future results. Use this platform for educational purposes only. Consult a licensed financial advisor before investing.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
