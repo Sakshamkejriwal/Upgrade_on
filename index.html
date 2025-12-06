@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navigation Header -->
+
+  <div id="welcomeModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+    <div style="background-color: white; padding: 2rem; border-radius: 10px; text-align: center; max-width: 400px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #1f2937; margin-bottom: 1rem;">Welcome to UPGrade! 👋</h2>
+      <p style="color: #6b7280; margin-bottom: 1.5rem; font-size: 1rem;">Start your investment journey today and watch your wealth grow with smart, data-driven decisions.</p>
+      <button id="closeWelcome" style="background-color: #10b981; color: white; border: none; padding: 0.75rem 2rem; border-radius: 5px; cursor: pointer; font-size: 1rem;">Let's Get Started</button>
+    </div>
+  </div>
+
+
   <header>
     <nav>
         <img src="logo.png" alt="UPGrade Logo" class="logo">
@@ -24,7 +33,7 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+
   <section class="hero">
     
     <div class="hero-content">
@@ -33,10 +42,11 @@
       <div class="mt-3">
         <a href="signup.html" class="btn btn-success btn-lg">Start Now</a>
       </div>
+      <br>
     </div>
   </section>
 
-  <!-- Features Section -->
+
   <section class="section container">
     <h2 class="section-title">Why Choose UPGrade?</h2>
     <p class="section-subtitle">Everything you need to become a smarter investor</p>
@@ -80,7 +90,7 @@
     </div>
   </section>
 
-  <!-- How It Works Section -->
+
   <section class="section container">
     <h2 class="section-title">How It Works</h2>
     <p class="section-subtitle">Three simple steps to start investing</p>
@@ -106,7 +116,39 @@
     </div>
   </section>
 
-  <!-- Trending Market News Section -->
+
+  <section class="section container" id="calculator">
+    <h2 class="section-title">Investment Calculator</h2>
+    <p class="section-subtitle">Calculate your potential returns</p>
+
+    <div style="background-color: var(--white-color); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); max-width: 500px; margin: 0 auto;">
+
+      <div class="form-group">
+        <label for="investmentAmount">Investment Amount (₹)</label>
+        <input type="number" id="investmentAmount" placeholder="Enter amount (e.g., 10000)" min="0">
+      </div>
+
+
+      <div class="form-group">
+        <label for="returnRate">Annual Return Rate (%)</label>
+        <input type="number" id="returnRate" placeholder="Enter rate (e.g., 12)" min="0" max="100" step="0.1">
+      </div>
+
+
+      <div class="form-group">
+        <label for="investmentYears">Investment Period (Years)</label>
+        <input type="number" id="investmentYears" placeholder="Enter years (e.g., 5)" min="1" max="50">
+      </div>
+
+
+      <button class="btn btn-primary btn-block" onclick="calculateInvestment()">Calculate Returns</button>
+
+
+      <div id="calculatorResult"></div>
+    </div>
+  </section>
+
+
   <section class="section container">
     <h2 class="section-title">Trending Market News</h2>
     <p class="section-subtitle">Stay updated with latest market trends and insights</p>
@@ -135,7 +177,6 @@
     </div>
   </section>
 
-  <!-- Learn Investing Section -->
   <section class="section container">
     <h2 class="section-title">Learn Investing</h2>
     <p class="section-subtitle">Beginner-friendly guides to master investing</p>
@@ -164,7 +205,6 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
   <section class="section container">
     <h2 class="section-title">What Users Say</h2>
     <p class="section-subtitle">Real feedback from our community of investors</p>
@@ -188,8 +228,6 @@
   </section>
 
 
-
-  <!-- Footer -->
   <footer>
     <div class="container footer-wrapper">
 
@@ -235,5 +273,7 @@
       </p>
     </div>
   </footer>
+  
+  <script src="code.js"></script>
 </body>
 </html>
