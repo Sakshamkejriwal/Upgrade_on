@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navigation Header -->
+
   <header>
     <nav>
       <img src="logo.png" alt="UPGrade Logo" class="logo">
@@ -24,15 +24,16 @@
     </nav>
   </header>
 
-  <!-- Auth Container -->
+
   <div class="auth-container">
     <div class="auth-form-wrapper">
       <h2 class="text-center mb-3">Welcome Back</h2>
 
       <form class="login-form">
         <div class="form-group">
-          <label for="login-email">Email Address</label>
-          <input type="email" id="login-email" placeholder="name@mail.com" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="name@mail.com" required>
+          <small id="emailError" style="color: #ef4444; display: block; margin-top: 5px;"></small>
         </div>
 
         <div class="form-group">
@@ -53,7 +54,7 @@
     </div>
   </div>
 
-  <!-- Footer -->
+
   <footer>
     <div class="container footer-wrapper">
 
@@ -99,5 +100,7 @@
       </p>
     </div>
   </footer>
+  
+  <script src="code.js"></script>
 </body>
 </html>
